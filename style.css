@@ -163,16 +163,22 @@ section .title::after{
 
 
 /* home section styling */
-.home{
+.home {
     display: flex;
-    background: url("images/profille.jpeg") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
+    background: url("images/Vincent.JPG") no-repeat;
+    background-position: 40% 20%;   /* Show face + shirt, adjust % to move it */
+    background-size: 95%;          /* Slight zoom-in (100% is default) */
     background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    min-height: 500px;
+    color: #fff;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
 }
+
+
+
 .home .max-width{
   width: 100%;
   display: flex;
@@ -275,8 +281,8 @@ section .title::after{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
+    border-radius: 10px;
+    padding: 70px 40px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -375,7 +381,7 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .mysql::before{
-    width: 10%;
+    width: 50%;
 }
 
 /* teams section styling */
@@ -468,7 +474,8 @@ section .title::after{
     margin-left: 30px;
 }
 .contact .contact-content .row i{
-    font-size: 25px;
+    font-size: 20x;
+    width: 60px;
     color: crimson;
 }
 .contact .contact-content .info .head{
