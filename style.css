@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home {
     display: flex;
-    background: url("https://vincent123-profile.github.io/VeePortfolio/images/Vincent.JPG") no-repeat;
+    background: url("https://vincent123-profile.github.io/VeePortfolio/images/vincent.jpg") no-repeat;
     background-position: 40% 20%;   /* Show face + shirt, adjust % to move it */
     background-size: 95%;          /* Slight zoom-in (100% is default) */
     background-attachment: fixed;
