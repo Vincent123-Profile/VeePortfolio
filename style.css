@@ -162,13 +162,11 @@ section .title::after{
 }
 
 
-/* home section styling */
 .home {
     display: flex;
-    background: url("https://vincent123-profile.github.io/VeePortfolio/images/vincent.jpg") no-repeat;
-    background-position: 40% 20%;   /* Show face + shirt, adjust % to move it */
-    background-size: 95%;          /* Slight zoom-in (100% is default) */
-    background-attachment: fixed;
+    background-color: #111;
+    background-size: cover;
+    background-attachment: scroll;
     height: 100vh;
     width: 100%;
     min-height: 500px;
@@ -176,6 +174,8 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     position: relative;
 }
+
+
 
 
 
@@ -598,6 +598,15 @@ footer span a:hover{
 
 
 /* responsive media query start */
+
+@media (max-width: 768px) {
+  .home {
+    background-attachment: scroll !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -723,3 +732,6 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+
